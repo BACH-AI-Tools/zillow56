@@ -30,7 +30,7 @@ Visit **[EMCP Platform](https://sit-emcp.kaleido.guru)** now to start your MCP j
 
 ## Introduction
 
-This is an automatically generated MCP server using [FastMCP](https://fastmcp.wiki) for accessing the Zillow56 API.
+This is an MCP server for accessing the Zillow56 API.
 
 - **PyPI Package**: `bach-zillow56`
 - **Version**: 1.0.0
@@ -108,8 +108,8 @@ export API_KEY="your_api_key_here"
 {
   "mcpServers": {
     "zillow56": {
-      "command": "python",
-      "args": ["E:\path\to\zillow56\server.py"],
+      "command": "uvx",
+      "args": ["--from", "bach-zillow56", "bach_zillow56"],
       "env": {
         "API_KEY": "your_api_key_here"
       }
